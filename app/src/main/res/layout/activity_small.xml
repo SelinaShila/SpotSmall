@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.selinashila.spotsmall.SmallActivity">
+
+    <TextView
+        android:id="@+id/welcomView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hello"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/welcomView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="buttonOne"
+        android:background="@color/colorAccent"
+        android:textColor="#a4f442"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnOne"
+        android:layout_toStartOf="@+id/btnOne"
+        android:onClick="buttonTwo"
+        android:background="@color/colorAccent"
+        android:textColor="#a4f442"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/btnOne" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btnOne"
+        android:layout_toEndOf="@+id/btnOne"
+        android:onClick="buttonThree"
+        android:background="@color/colorAccent"
+        android:textColor="#a4f442"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/btnOne" />
+
+
+    <TextView
+        android:id="@+id/pointView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/btnThree"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pointView"
+        android:layout_marginTop="43dp"
+        android:layout_toEndOf="@+id/welcomView"
+        android:layout_toRightOf="@+id/welcomView"
+        android:background="@color/colorAccent"
+        android:text="Restart"
+        android:textColor="#a4f442" />
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_restart"
+        android:layout_alignBottom="@+id/btn_restart"
+        android:layout_alignEnd="@+id/btnTwo"
+        android:layout_alignRight="@+id/btnTwo"
+        android:background="@color/colorAccent"
+        android:text="end"
+        android:textColor="#a4f442" />
+
+</RelativeLayout>
